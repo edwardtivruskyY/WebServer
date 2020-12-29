@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>我的首个网页</title>
+
+    </head>
+    <body background="background.jpg"
+          style=" background-repeat:no-repeat ;
+          background-size:100% 100%;
+          background-attachment:fixed;">
+        <center>
+            <!--
+                在html中使用相对路径"./"
+                由于页面是被浏览器解释的，浏览器认为"./"实际位置是请求当前页面时当前页面
+                所在的目录。
+                例如我们请求当前页面在浏览器输入的路径为：
+                http://localhost:8088/myweb/index.html
+                那么在这个页面中当我们引用其他资源时指定路径中用到的"./"都被理解为是：
+                http://localhost:8088/myweb
+                因此下面加载图片时指定的src="./食只芙蓉王.jpg"浏览器理解为的绝对路径为：
+                http://localhost:8088/myweb/食只芙蓉王.jpg
+            -->
+            <h1>Chrome</h1>
+            <br>
+            <img src="logo.jpg">
+            <br>
+            <input type="text" size="32">
+            <br>
+            <input type="button" value="搜索一下" onclick="alert('点击时发生错误!')">
+            <br>
+            <a href="./reg.html">sign up？</a>
+            <br>
+            <a href="./login.html">already sign up？sign in</a>
+            <br>
+            <a href="./change_psw.html">change password</a>
+            <br>
+            <a href="./UserList">show all users</a>
+            <br>
+            <a href="./createQR.html">createQR</a>
+            <br>
+        </center>
+    </body>
+</html>
